@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -9,7 +9,9 @@
 			"use strict";
 			function fEWOOnLoad()
 			{
-				alert("Your screen resolution (as reported by your web browser) is: " + screen.width + "x" + screen.height);
+				// alert("Your screen resolution (as reported by your web browser) is: " + screen.width + "x" + screen.height);
+
+				document.getElementsByTagName("BODY")[0].innerHTML = "Your screen resolution (as reported by your web browser) is: " + screen.width + "x" + screen.height;
 			}
 		</script>
 	</head>
